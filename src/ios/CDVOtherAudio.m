@@ -8,9 +8,7 @@
 {
     CDVPluginResult* pluginResult = nil;
 
-    BOOL isOtherAudioPlaying = [[AVAudioSession sharedInstance] isOtherAudioPlaying];
-
-    pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsBool:isOtherAudioPlaying];
+    pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsBool:[[AVAudioSession sharedInstance] isOtherAudioPlaying]];
 
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
