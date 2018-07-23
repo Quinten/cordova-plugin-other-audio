@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-other-audio" version="0.2.3">
+    <name>Other Audio</name>
+    <description>Cordova Other Audio Plugin</description>
+    <license>MIT</license>
+    <keywords>cordova,isOtherAudioPlaying</keywords>
+    <js-module src="www/other-audio.js" name="OtherAudio">
+        <clobbers target="otherAudio" />
+    </js-module>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="OtherAudio">
+                <param name="ios-package" value="CDVOtherAudio" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <header-file src="src/ios/CDVOtherAudio.h" />
+        <source-file src="src/ios/CDVOtherAudio.m" />
+    </platform>
+
+</plugin>
