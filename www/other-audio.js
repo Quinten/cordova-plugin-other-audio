@@ -1,5 +1,3 @@
-cordova.define("cordova-plugin-other-audio.OtherAudio", function(require, exports, module) {
-
 var exec = require('cordova/exec');
 
 var otherAudio = function(callback) {
@@ -8,5 +6,3 @@ var otherAudio = function(callback) {
     }, "OtherAudio", "isOtherAudioPlaying");
 };
 module.exports = otherAudio;
-
-});
