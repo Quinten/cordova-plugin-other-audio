@@ -1,7 +1,7 @@
 {
   "name": "cordova-plugin-other-audio",
-  "version": "0.2.4",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Cordova plugin to check if other audio is playing on the device",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

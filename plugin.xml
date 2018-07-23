@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-other-audio" version="0.2.4">
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-other-audio" version="0.0.1">
     <name>Other Audio</name>
     <description>Cordova Other Audio Plugin</description>
     <license>MIT</license>
     <keywords>cordova,isOtherAudioPlaying</keywords>
-    <js-module src="www/other-audio.js" name="OtherAudio">
+    <js-module src="src/www/other-audio.js" name="OtherAudio">
         <clobbers target="otherAudio" />
     </js-module>
 
