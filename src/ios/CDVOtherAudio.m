@@ -8,7 +8,7 @@
 {
     CDVPluginResult* pluginResult = nil;
 
-    pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsBool:[[AVAudioSession sharedInstance] isOtherAudioPlaying]];
+    pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsBool:[[AVAudioSession sharedInstance] secondaryAudioShouldBeSilencedHint]];
 
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
